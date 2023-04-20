@@ -1,0 +1,81 @@
+---
+import { Image } from 'astro:assets'
+import Moon from '../assets/svg/moonstuff.jpg'
+import Astronaut from '../assets/images/astronaut.jpg'
+import Locator from '../assets/images/locator.png'
+import Logo from '../assets/svg/moonbaselogo.svg'
+
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+---
+
+	<div class="scroll hero-two w-full h-full fixed top-0 overflow-hidden bg-black z-0 bg-moon bg-center bg-cover bg-no-repeat" data-speed="5.9">
+
+        <div class="flex flex-col w-full h-full items-center justify-start text-white relative z-50 pt-[20vh]">
+            <img src={Logo.src} width={Logo.width} height={Logo.height} alt='...' class='invert  w-3/4 lg:w-1/2 max-w-[558px] pb-6' />
+            <div class="hidden lg:flex justify-center flex-row font-nixie text-sm text-gray-300 pt-2">
+              <div class="text-sm">Project Directors:&nbsp;&nbsp;Ashley Davis&nbsp;&nbsp;&middot;&nbsp;&nbsp;Halia Something</div>
+             </div>
+           <!--<p class="block text-xl text-center text-gray-100 capitalize mt-14 font-nixie">4 astronauts&nbsp;&nbsp;∙&nbsp;&nbsp;2 years&nbsp;&nbsp;∙&nbsp;&nbsp;240,000 miles from earth</p>
+            <p class="text-2xl font-nixie mt-4">What will it take to survive?</p>-->
+        </div>
+      <!--  <div class="absolute z-50 top-[70%] right-[40%]">
+            <svg viewBox="0 0 10 10" width="50%">
+                <circle cx="5" cy="5" r="4.5" fill-opacity="0.1" fill="#fff"/>
+                <circle cx="5" cy="5" r="3.5" fill-opacity="0.2" fill="#fff"/>
+                <circle cx="5" cy="5" r="2.5" fill-opacity="0.3" fill="#fff"/>
+                <circle cx="5" cy="5" r="1.5" fill-opacity="0.5" fill="#fff"/>
+                <circle cx="5" cy="5" r="0.5" fill-opacity="0.7" fill="#ffffff"/>
+                
+              </svg>
+             <div class="absolute top-[37%] left-[45%] text-white font-nixie text-xs uppercase tracking-widest"><strong>Moon Base 3</strong></div>
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-[50%] left-[25%]">
+                <line x1="0" y1="0" x2="150" y2="0" stroke="white" />
+              </svg>
+    </div>
+    </div>-->
+    <!--<div class="absolute z-50 top-0 h-full">
+        <Image src={Astronaut} alt="..." class="h-full object-contain -ml-[30%] mix-blend-screen opacity-20"/>
+    </div>-->
+    
+<div class="px-4 h-[20vh] fixed bottom-0 w-full text-[0.7rem] md:text-xs uppercase text-white text-center font-nixie flex flex-col sm:flex-row items-center justify-center sm:tracking-[0.25rem] :tracking-[0.5rem] xl:tracking-[1rem]">4 Astronauts</span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<span class="block">2 Years</span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<span class="block">240,000 Miles from Earth</span></div>
+<script  type="module">
+
+  function  enableParallax() {
+  
+    const  isMac =
+  
+    navigator.userAgentData?.platform.toLowerCase().includes('mac') ||
+  
+    navigator.platform?.toLowerCase().includes('mac');
+  
+    const  isChrome = navigator.userAgent.toLowerCase().includes('chrome');
+  
+    
+  
+  // Laggy behavior on chrome and mac with parallax scrolling
+  
+    if (isMac && isChrome) return;
+  
+      
+  
+    const  targets = document.querySelectorAll('.scroll');
+  
+    window.addEventListener('scroll', () => {
+    
+      const  offset = window.scrollY / -20;
+  
+      targets.forEach((target) => {
+  
+      target.style.transform = `translateY(${offset * target.dataset.speed}px)`;
+  
+        });
+      });
+    }
+  
+  enableParallax();
+  
+  </script>
