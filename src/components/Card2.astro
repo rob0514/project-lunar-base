@@ -1,4 +1,5 @@
 ---
+import Lunarbase from '~/assets/images/lunarbase.jpg'
 export interface Props {
 	title: string;
 	body: string;
@@ -25,7 +26,8 @@ export interface Props {
 		</article>
 		</div>
 		<div class="flex flex-col h-1/2 xl:h-full w-full xl:w-1/2 z-50 bg-black">
-		   
+		   <div><img src={Lunarbase.src} width={Lunarbase.width} height={Lunarbase.height} alt="..." class="invert" /></div>
+		   <div></div>
 		</div>
 	</div>
 </div>
