@@ -7,12 +7,9 @@ export interface Props {
 }
 ---
 
-<div class="hero min-h-screen bg-black lg:bg-[url('~/assets/images/bascamp.jpg')] lg:bg-cover lg:bg-center overflow-hidden">
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
+<div class="hero min-h-screen bg-black lg:bg-[url('~/assets/images/bascamp.jpg')] lg:bg-cover lg:bg-center overflow-hidden z-20">
     <div class="flex items-center justify-center flex-col-reverse lg:flex-row-reverse mt-12 lg:mt-0 ">
-      <img src={Basecamp.src} width={Basecamp.width} height={Basecamp.height} alt="..." class="lg:hidden z-20 w-[90%] h-full md:max-w-[50%] object-cover object-center" />
+      <img src={Basecamp.src} width={Basecamp.width} height={Basecamp.height} alt="..." class="lg:hidden z-30 w-[90%] h-full md:max-w-[50%] object-cover object-center" />
       <div class="px-[10vw] prose lg:prose-xl font-nixie text-white py-12 pt-0 lg:mt-[-40%] lg:ml-[-50%]">
 		<h3 class="text-white">The Challenge</h3>
 		<p class="text-white prose prose-xs">
