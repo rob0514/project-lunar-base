@@ -1,0 +1,23 @@
+---
+import Gamma from '~/assets/images/gamma.jpg'
+
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+---
+
+<div class="hero min-h-screen bg-black overflow-hidden">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div class="flex items-center justify-center flex-col lg:flex-row mt-12 lg:mt-0 ">
+      <img src={Gamma.src} width={Gamma.width} height={Gamma.height} alt="..." class="z-20 w-[90%] h-full md:max-w-[50%] object-cover object-center" />
+      <div class="px-[10vw] prose lg:prose-xl font-nixie text-white py-12">
+        <h3 class="pt-12 lg:pt-0 text-white">Gamma Rays</h3>
+        <p class="text-white prose prose-xs">To protect the astronauts from harmful radiation the walls of our living area, farm, garage, and green houses will be made out of several inches of steel. And a leaded glass cover over our vehicles.  </p>
+       
+    </div>
+    </div>
+  </div>
