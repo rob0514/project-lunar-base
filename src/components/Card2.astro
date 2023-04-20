@@ -6,30 +6,25 @@ export interface Props {
 	href: string;
 }
 ---
-<div class="bg-black relative w-full h-screen z-20">
-	<div class="flex flex-col xl:flex-row h-full w-full overflow-hidden pt-[20vh] xl:pt-0">
-		<div id='stars'></div>
-		<div id='stars2'></div>
-		<div id='stars3'></div>
-	<div class="flex flex-col h-full xl:h-full w-full xl:w-1/2 items-center justify-center px-[10vw]">
-		<article class="prose lg:prose-xl font-nixie">
-			<h3 class="text-white">The Crew</h3>
-			<p class="text-white text-sm">Pilot and Mechanic&nbsp;&nbsp;&middot;&nbsp;&nbsp;Doctor&nbsp;&nbsp;&middot;&nbsp;&nbsp;ecologist&nbsp;&nbsp;&middot;&nbsp;&nbsp;Scientist </p>
-			<h2 class="prose-invert">Living</h2>
-		<p class="text-white">
+
+<div class="hero min-h-screen bg-black overflow-hidden">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div class="flex items-center justify-center flex-col lg:flex-row mt-12 lg:mt-0 ">
+      <img src={Lunarbase.src} width={Lunarbase.width} height={Lunarbase.height} alt="..." class="invert z-20 w-[90%] h-full md:max-w-[50%] object-cover object-center" />
+      <div class="px-[10vw] prose lg:prose-xl font-nixie text-white py-12">
+		<h3 class="text-white">The Crew</h3>
+		<p class="text-white prose prose-xs">Pilot and Mechanic&nbsp;&nbsp;&middot;&nbsp;&nbsp;Doctor&nbsp;&nbsp;&middot;&nbsp;&nbsp;ecologist&nbsp;&nbsp;&middot;&nbsp;&nbsp;Scientist </p>
+		<h3 class="text-white">Living</h3>
+		<p class="text-white prose prose-xs">
 			Our small, but efficient living space is where the four men will be spending hours of their time for the next 2 years. It consists of four bedrooms, a bathroom, a kitchen, a dining space, and a social area.
-	
 		</p>
-		<h3 class="prose-invert">Bedrooms</h3>
-		<p class="text-white prose-sm">
+		<h3 class="text-white">Bedrooms</h3>
+		<p class="text-white prose prose-xs">
 			Each of our bedrooms include a hallway leading to their own personal greenhouse. The greenhouse is there for emergencies, personal use, oxygen supply, etc. The bedrooms each have their own walls and privacy from the main living area for personal time and incase they develop a sickness. 
 	
 		</p>
-		</article>
-		</div>
-		<div class="flex flex-col h-full xl:h-full w-full xl:w-1/2 z-50 bg-black">
-		   <div><img src={Lunarbase.src} width={Lunarbase.width} height={Lunarbase.height} alt="..." class="invert" /></div>
-		   <div></div>
-		</div>
-	</div>
-</div>
+    </div>
+    </div>
+  </div>

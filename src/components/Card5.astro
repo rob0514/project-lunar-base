@@ -1,27 +1,23 @@
 ---
+import Farm from '~/assets/images/farm.jpg'
+
 export interface Props {
 	title: string;
 	body: string;
 	href: string;
 }
 ---
-<div class="bg-black relative w-full h-screen z-20">
-	<div class="flex flex-col xl:flex-row h-full w-full overflow-hidden pt-[20vh] xl:pt-0">
-		<div id='stars'></div>
-		<div id='stars2'></div>
-		<div id='stars3'></div>
-		<div class="flex flex-col h-1/2 xl:h-full w-full xl:w-1/2 z-50 bg-[url('~/assets/images/farm.jpg')] bg-cover bg-center">
-		   
-		</div>
-	<div class="flex flex-col h-1/2 xl:h-full w-full xl:w-1/2 items-center justify-center px-[10vw]">
-		<article class="prose lg:prose-xl font-nixie">
-			<h2 class="prose-invert">Farm</h2>
-		<p class="text-white">
-			The farm is where our main food supply is grown. Pipes from the bathroom are connected to the farm, and waste is used as fertilizer. Like the greenhouse we have a daylight and nighttime mode, that uses artificial sunlight to sustain our plants.
-	
-		</p>
-	</article>
-		</div>
-	
-	</div>
-</div>
+
+<div class="hero min-h-screen bg-black overflow-hidden">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div class="flex items-center justify-center flex-col lg:flex-row-reverse mt-12 lg:mt-0 ">
+      <img src={Farm.src} width={Farm.width} height={Farm.height} alt="..." class="z-20 w-[90%] h-full md:max-w-[50%] object-cover object-center" />
+      <div class="px-[10vw] prose lg:prose-xl font-nixie text-white py-12">
+        <h3 class="pt-12 lg:pt-0 text-white">Farm</h3>
+        <p class="text-white prose prose-xs">The farm is where our main food supply is grown. Pipes from the bathroom are connected to the farm, and waste is used as fertilizer. Like the greenhouse we have a daylight and nighttime mode, that uses artificial sunlight to sustain our plants.</p>
+       
+    </div>
+    </div>
+  </div>

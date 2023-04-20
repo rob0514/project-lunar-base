@@ -1,26 +1,23 @@
 ---
+import Garage from '~/assets/images/garage.jpg'
+
 export interface Props {
 	title: string;
 	body: string;
 	href: string;
 }
 ---
-<div class="bg-black relative w-full h-screen z-20">
-	<div class="flex flex-col xl:flex-row h-full w-full overflow-hidden pt-[20vh] xl:pt-0">
-		<div id='stars'></div>
-		<div id='stars2'></div>
-		<div id='stars3'></div>
-	<div class="flex flex-col h-1/2 xl:h-full w-full xl:w-1/2 items-center justify-center px-[10vw]">
-		<article class="prose lg:prose-xl font-nixie">
-			<h2 class="prose-invert">Garage/Mechanic Room</h2>
-		<p class="text-white">
-			Our garage is mainly used to store vehicles and electronics. It is also used to repair mechanics and anything else that needs fixing. The garage is connected to the living space and oxygenated through our air vents coming from the greenhouses. 
-	
-		</p>
-	</article>
-		</div>
-		<div class="flex flex-col h-1/2 xl:h-full w-full xl:w-1/2 z-50 bg-[url('~/assets/images/garage.jpg')] bg-cover bg-center">
-		   
-		</div>
-	</div>
-</div>
+
+<div class="hero min-h-screen bg-black overflow-hidden">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div class="flex items-center justify-center flex-col lg:flex-row mt-12 lg:mt-0 ">
+      <img src={Garage.src} width={Garage.width} height={Garage.height} alt="..." class="z-20 w-[90%] h-full md:max-w-[50%] object-cover object-center" />
+      <div class="px-[10vw] prose lg:prose-xl font-nixie text-white py-12">
+        <h3 class="pt-12 lg:pt-0 text-white">Garage/Mechanic Room</h3>
+        <p class="text-white prose prose-xs">Our garage is mainly used to store vehicles and electronics. It is also used to repair mechanics and anything else that needs fixing. The garage is connected to the living space and oxygenated through our air vents coming from the greenhouses.</p>
+       
+    </div>
+    </div>
+  </div>
