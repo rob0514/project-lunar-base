@@ -20,13 +20,6 @@ module.exports = {
 				'overviewbg':"url('../assets/images/overviewbg.webp')",
 				'moonscape':"url('../assets/images/moonscape.webp')",
 			},
-			screens: {
-				sm: "640px",
-				lg: "960px",
-				xl: "1280px",
-				"2xl": "1580px",
-				"full": "100vw"
-			  },
 			aspectRatio: {
 				'golden': '1.618 / 1',
 				'moon': '1707 / 916',
